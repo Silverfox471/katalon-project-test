@@ -12,41 +12,24 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://automationpractice.com/index.php')
 
-if (true) {
-    WebUI.click(findTestObject('Page_My Store/a_Sign in'))
+WebUI.click(findTestObject('Object Repository/Order history and details/Page_My Store/a_Sign in'))
 
-    WebUI.verifyElementPresent(findTestObject('Signin-function/Page_Login - My Store/input_Email address_email', [('variable') : '']), 
-        0)
+WebUI.setText(findTestObject('Object Repository/Order history and details/Page_Login - My Store/input_Email address_email'), 
+    'guillaume.troget@outlook.com')
 
-    break
-}
+WebUI.setEncryptedText(findTestObject('Object Repository/Order history and details/Page_Login - My Store/input_Password_passwd'), 
+    'Ja0Pxz27WxSR53LBwf/n5g==')
 
-if (true) {
-    WebUI.setText(findTestObject('Page_Login - My Store/input_Email address_email'), 'guillaume.troget@outlook.com')
+WebUI.click(findTestObject('Object Repository/Order history and details/Page_Login - My Store/span_Sign in'))
 
-    WebUI.setEncryptedText(findTestObject('Page_Login - My Store/input_Password_passwd'), 'Ja0Pxz27WxSR53LBwf/n5g==')
+WebUI.click(findTestObject('Object Repository/Order history and details/Page_My account - My Store/span_Order history and details'))
 
-    break
-}
+WebUI.click(findTestObject('Object Repository/Order history and details/Page_Order history - My Store/span_Back to your account.'))
 
-if (true) {
-    WebUI.click(findTestObject('Page_Login - My Store/span_Sign in'))
-
-    while (true) {
-    }
-    
-    continue
-}
-
-if (true) {
-    WebUI.closeBrowser()
-
-    continue
-}
+WebUI.closeBrowser()
 

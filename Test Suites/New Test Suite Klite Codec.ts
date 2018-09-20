@@ -15,6 +15,6 @@
       <guid>2bc5ce98-b2c0-420f-9651-4a4930b1c789</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Homepage - Signin</testCaseId>
+      <testCaseId>Test Cases/Homepage - Signin oldTestCase</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
